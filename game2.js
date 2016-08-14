@@ -40,23 +40,24 @@ function updateCounts () {
     green: 0,
     invisible: 0
   }
-
-function counter () {
+ 
+function counter(){
   return document.getElementsByClassName('board')[0].children
 }
 
   var myDots = document.getElementsByClassName('board')[0].children
 
-  for (var i = 0; i < myDots.length; i++) {
-    if (myDots[i].classList.contains('blue') === true) {
-      totals.blue += 1
-    } else if (myDots[i].classList.contains('green') === true) {
-      totals.green += 1
-    } else if (myDots[i].classList.contains('invisible') === true) {
-      totals.invisible += 1
+  for (var i = 0; i<myDots.length; i++){
+    if(myDots[i].classList.contains('blue')===true){
+      totals.blue+=1
+    }else if(myDots[i].classList.contains('green')===true){
+      totals.green+=1
+    }else if(myDots[i].classList.contains('invisible')===true){
+      totals.invisible+=1
 
     }
   }
+  
   displayTotals(totals)
 }
 
